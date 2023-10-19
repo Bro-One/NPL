@@ -1,1 +1,2 @@
-"# NPL" 
+# NPL 
+  control the motorized stage
