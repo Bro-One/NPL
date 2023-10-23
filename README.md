@@ -1,3 +1,3 @@
 # NPL 
   control the motorized stage
-referece : https://github.com/ken1row/PyOptoSigma
+  referece : https://github.com/ken1row/PyOptoSigma
