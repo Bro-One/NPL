@@ -14,4 +14,4 @@
   ## the functions that I need
   1. reset the origin
   2. set a min/max pos
-  3. python GUI
+  3. python GUI (user interface)
