@@ -42,6 +42,7 @@ msg = '''
  r : set current position as new origin.
  i : come back to the absolute origin. (initialize)
  c : show the current position
+ 1 : print this message again
  
  unit = micro-meter (um)
  if you want to exit, press 'q' or ctrl + c
@@ -55,6 +56,7 @@ while 1:
     if key == keys.UP:
         if stages.get_position()[0] + step > max_len_1:
             print("out of range!")
+            print(msg)
             continue
         else:
             stages.move(stage=1, amount=step, wait_for_finish=True)  # 1000um = 1mm
@@ -106,3 +108,10 @@ while 1:
     elif key == 'q':
         print("== exit the program ==")
         break
+
+    elif key == '1':
+        print(msg)
+
+    else:
+        print("It is not permitted. if you want to see notification. please press 1")
+        continue
