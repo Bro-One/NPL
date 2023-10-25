@@ -14,4 +14,5 @@
   1. reset the origin
   2. set a min/max pos
   3. python GUI (user interface)
-  4. (If it is possible) Used in various models
+  4. Select the model of stage 1 and 2
+  5. (If possible) Used in various models
