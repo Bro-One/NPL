@@ -17,7 +17,7 @@
   1. 반드시 sudo(관리자권한) 이어야 함 - 키보드 입력을 받기 때문에 보안 문제로 인해 sudo로 사용해야 함
   2. IDE 사용못함. 시스템 터미널을 사용할 것
      
-  ## the needed functions
+  ## The needed functions
   1. reset the origin
   2. set a step size
   3. set a min/max pos
