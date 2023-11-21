@@ -8,31 +8,36 @@ from getkey import getkey, keys
 # define functions
 def prt_f():
     print("== complete! ==\n")
-def prt_l():
-    print("location = {}".format(stages.get_position()))
+def prt_l(mode=0):
+    list = [0, 0]
+    list[0] = stages.get_position()[0] - new_origin[0]
+    list[1] = stages.get_position()[1] - new_origin[1]
+    if mode == 0:
+        print("location = {}".format(list))
+
+    elif mode == 1:
+        return list
+
 # print and get a current position
 
 # define step size
 step = 1000
 # 1000um = 1mm
 
-# define maximum length
-max_len_1 = 85000
+# define maximum lengthr
+max_len_1 = 100000
 max_len_2 = 100000
 # set connection
 stages = Session(Controllers.SHOT_702)
-stages.append_stage(Stages.OSMS20_85)
+stages.append_stage(Stages.OSMS26_100)
 stages.append_stage(Stages.OSMS26_100)
 stages.connect()
 
 # initialize
-print("****** initialize the location ******")
-stages.initialize()
+#print("****** initialize the location ******")
+#stages.initialize()
 
 # define location
-location = stages.get_position()
-
-print("****** current location ******")
 
 msg = '''
 ****** Ready for keyboard input ******
@@ -41,7 +46,7 @@ msg = '''
  
  r : set current position as new origin.
  i : come back to the absolute origin. (initialize)
- c : show the current position
+ m : move to the target position
  1 : print this message again
  
  unit = micro-meter (um)
@@ -49,6 +54,11 @@ msg = '''
 '''
 
 print(msg)
+print("****** current location ******")
+location = stages.get_position()
+print(location)
+
+new_origin = [0, 0]
 while 1:
     key = getkey()
     print("key ={}".format(key))
@@ -89,13 +99,21 @@ while 1:
             stages.move(stage=2, amount=-step, wait_for_finish=True)
             prt_l()
             prt_f()
-    elif key == 'c':
-        print("== current position ==")
+    elif key == 'm':
+        target_x, target_y = input("target position \n((ex) 1000, 1000) : ").split(",")
+        target_x = int(target_x)
+        target_y = int(target_y)
+        stages.move(stage=1,amount=target_x, wait_for_finish=True)
+        stages.move(stage=2,amount=target_y, wait_for_finish=True)
         prt_l()
+    elif key == "c":
+        print("== current location ==")
+        print("absolute coord: {}".format(stages.get_position()))
+        print("relative coord: {}".format(prt_l(mode=1)))
 
     elif key == 'r':
         print("== set current position as new origin ==")
-        stages.reset()
+        new_origin = stages.get_position()
         prt_l()
         prt_f()
 
