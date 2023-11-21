@@ -26,4 +26,3 @@
   3. set a min/max pos - complete
   4. python GUI (user interface)
   5. (If possible) Select the model of stage 1 and 2
-  6. (If possible) Used in various models
