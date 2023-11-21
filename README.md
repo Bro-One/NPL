@@ -10,6 +10,9 @@
   
   Stage : [OSMS20-35(XY)](https://sihyunkorea.cafe24.com/product/osms20-35xy-m6-osms20-xy-%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%80/916/category/427/display/1/)
 
+  ## Files
+  beta_1.py : OSMS26-100 2개로 테스트할 때 사용한 코드 (in Ubuntu)
+  
   ## Caution
   defult OS는 Ubuntu 입니다. (Window에서 쓰려면 포트를 지정해줘야 함)
   
