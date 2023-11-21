@@ -24,5 +24,5 @@
   1. reset the origin - complete
   2. set a step size - complete
   3. set a min/max pos - complete
-  4. python GUI (user interface)
-  5. (If possible) Select the model of stage 1 and 2
+  4. Chek the code in Window OS
+  5. (if possible)python GUI
