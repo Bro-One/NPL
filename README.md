@@ -23,7 +23,8 @@
   getkey 라이브러리를 사용해서 생기는 제약들이 있습니다.
   1. 반드시 sudo(관리자권한) 이어야 함 - 키보드 입력을 받기 때문에 보안 문제로 인해 sudo로 사용해야 함
   2. IDE 사용못함. 시스템 터미널을 사용할 것
-     
+
+  ## Manual
   ## The needed functions
   1. reset the origin - complete
   2. set a step size - complete
