@@ -15,6 +15,7 @@
   
   ## Caution
   axis 1 : 위, 아래
+  
   axis 2 : 좌, 우
   
   defult OS는 Ubuntu 입니다. (Window에서 쓰려면 포트를 지정해줘야 함)
