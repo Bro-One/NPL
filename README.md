@@ -34,7 +34,7 @@
 
   pip3 install getkey
 
-  pip3 install serial
+  pip3 install pyserial
   
   ## Manual
   ## The needed functions
