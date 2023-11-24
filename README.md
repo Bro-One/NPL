@@ -33,7 +33,7 @@
   
   사전 준비
 
-  install getkey, pyOptosigma, serial
+  install getkey, pyOptosigma, pyserial
   
   pip3 install pyOptosigma
 
