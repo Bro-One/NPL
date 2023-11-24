@@ -12,7 +12,12 @@
 
   ## Files
   beta_1.py : OSMS26-100 2개로 테스트할 때 사용한 코드 (in Ubuntu)
+
+  ## Update
+  https://www.reddit.com/r/learnpython/comments/yxfwy5/getkey_bug_in_vscode/
   
+  2023.11.24 bug of Getkey on Windows. Getkey to keyboard
+
   ## Caution
   axis 1 : 위, 아래
   
