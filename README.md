@@ -23,7 +23,19 @@
   getkey 라이브러리를 사용해서 생기는 제약들이 있습니다.
   1. 반드시 sudo(관리자권한) 이어야 함 - 키보드 입력을 받기 때문에 보안 문제로 인해 sudo로 사용해야 함
   2. IDE 사용못함. 시스템 터미널을 사용할 것
+  ## Manual
+  (in Window)
+  
+  사전 준비
 
+  install getkey, pyOptosigma, serial
+  
+  pip3 install pyOptosigma
+
+  pip3 install getkey
+
+  pip3 install serial
+  
   ## Manual
   ## The needed functions
   1. reset the origin - complete
