@@ -43,7 +43,12 @@
 
   pip3 install pyserial
   
-  ## Manual
+  default port : dev/ttyUSB0 <- 이게 우분투에서 기본 포트이기 때문에 따로 지정해줘야 함 (윈도우는 COMx 형식)
+
+  == 포트 확인하는 법 ==
+  
+  장치관리자 -> 포트(COM & LPT) -> 포트확인
+  
   ## The needed functions
   1. reset the origin - complete
   2. set a step size - complete
