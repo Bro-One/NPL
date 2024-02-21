@@ -13,7 +13,10 @@
   ## Files
   beta_1.py : OSMS26-100 2개로 테스트할 때 사용한 코드 (in Ubuntu)
 
-  beta_2.py : OSMS26-100 2개로 테스트할 때 사용한 코드 (in Window)
+  beta_2_for_Ubuntu.py : beta_1에 사용한 모듈이 윈도우에서 버그 이슈로 인해 다른 모듈을 사용해봄
+  
+  beta_2_for_Window.py : 다른 모듈을 사용하여 코드를 수정하였으나 termios가 윈도우에서 지원이 안되기 때문에 msvcrt를 사용하여 다시 수정한 코드. 진짜로 되는 걸 확인
+  
 
   ## Update
   https://www.reddit.com/r/learnpython/comments/yxfwy5/getkey_bug_in_vscode/
