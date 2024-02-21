@@ -15,7 +15,7 @@
 
   beta_2_for_Ubuntu.py : beta_1에 사용한 모듈이 윈도우에서 버그 이슈로 인해 다른 모듈을 사용해봄
   
-  beta_2_for_Window.py : 다른 모듈을 사용하여 코드를 수정하였으나 termios가 윈도우에서 지원이 안되기 때문에 msvcrt를 사용하여 다시 수정한 코드. 진짜로 되는 걸 확인
+  beta_2_for_Win.py : 다른 모듈을 사용하여 코드를 수정하였으나 termios가 윈도우에서 지원이 안되기 때문에 msvcrt를 사용하여 다시 수정한 코드. 진짜로 되는 걸 확인
   
 
   ## Update
