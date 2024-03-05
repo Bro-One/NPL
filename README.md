@@ -23,6 +23,9 @@
   
   2023.11.24 bug of Getkey on Windows. Getkey to keyboard
 
+  2024.03.21 finished
+
+  
   ## Caution
   axis 1 : 위, 아래
   
