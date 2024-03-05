@@ -23,7 +23,7 @@
   
   2023.11.24 bug of Getkey on Windows. Getkey to keyboard
 
-  2024.03.21 finished
+  2024.03.21 completed
 
   
   ## Caution
@@ -59,5 +59,5 @@
   1. reset the origin - complete
   2. set a step size - complete
   3. set a min/max pos - complete
-  4. Chek the code in Window OS
+  4. Chek the code in Window OS - complete
   5. (if possible)python GUI
